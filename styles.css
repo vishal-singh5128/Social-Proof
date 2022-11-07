@@ -1,0 +1,353 @@
+body
+{   
+    background-image: url(bg-pattern-top-desktop.svg),url(bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 top, 0 bottom;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+
+}
+
+main
+{   position: relative;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 0% 30%;
+    height: 100vh;
+    width: 80vw ;
+    margin: 10vh 10vw 20px;
+    
+    justify-content: space-between;
+}
+
+h1
+{   width: 70%;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: initial;
+    color: #50234C;
+}
+
+h5
+{   color: #f2f2f2;
+    display: inline;
+    font: 500;
+    font-size: 1em;
+}
+
+h6
+{   color: #B4639B;
+    display: inline;
+    font-weight: 500;
+    font-size: 0.75em;
+
+}
+
+img
+{   width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+.heading
+{   margin: 10px 0px;
+    padding: 10px 20px;
+    padding-right: 0;
+    width:35vw ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 8px;
+}
+p
+{   width: 75%;
+    color: #817C80;
+
+}
+
+.review
+{   display: flex;
+    margin: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: #442841;
+   padding: 30px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 30vw;
+    position: relative;
+    
+    
+    
+    
+    
+
+}
+
+.r1
+{   
+    top: 0px;
+    left: 0px;
+    margin: 20px;
+    padding: 10px 20px;
+    position: absolute;
+    background-image: url(icon-star.svg) ,url(icon-star.svg) ,url(icon-star.svg) ,
+    url(icon-star.svg),url(icon-star.svg);
+    background-repeat: no-repeat, no-repeat ,no-repeat, no-repeat ,no-repeat;
+    background-position: 20px center ,50px center,80px center, 110px center, 140px;
+    padding-left: 170px;
+    background-color: #F7F2F8;
+    border-radius: 8px;
+    width: 15vw;
+}
+
+.r2
+{   position: absolute;
+    top: 60px;
+    left: 60px;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-image: url(icon-star.svg) ,url(icon-star.svg) ,url(icon-star.svg) ,
+    url(icon-star.svg),url(icon-star.svg);
+    background-repeat: no-repeat, no-repeat ,no-repeat, no-repeat ,no-repeat;
+    background-position: 20px center ,50px center,80px center, 110px center, 140px;
+    padding-left: 170px;
+    background-color: #F7F2F8;
+    width: 15vw;
+
+}
+
+.r3
+{   position: absolute;
+    top: 120px;
+    left: 120px;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-image: url(icon-star.svg) ,url(icon-star.svg) ,url(icon-star.svg) ,
+    url(icon-star.svg),url(icon-star.svg);
+    background-repeat: no-repeat, no-repeat ,no-repeat, no-repeat ,no-repeat;
+    background-position: 20px center ,50px center,80px center, 110px center, 140px;
+    padding-left: 170px;
+    background-color: #F7F2F8;
+    width: 14vw;
+}
+
+.comments
+{   grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    position: relative;
+    width: 70%;
+    color: #f2f2f2;
+}
+
+.c1
+{   padding:  40px;
+    margin: 20px;
+    background-color: #511F50;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.c2
+{   position: absolute;
+    top: 8%;
+    left: 100%;
+    width: 70%;
+    padding:  40px;
+    margin: 20px;
+    background-color: #511F50;
+    
+    border-radius: 8px;
+}
+
+.c3
+{   position: absolute;
+    top: 16%;
+    left: 200%;
+    width: 70%;
+    padding:  40px;
+
+    margin: 20px;
+    background-color: #511F50;
+    
+    border-radius: 8px;
+
+}
+
+@media only screen and (max-device-width:913px) and (min-device-width:365px)
+{
+
+*{  margin: 0;
+    padding: 0;
+
+}    
+
+body 
+{   width: 100%;
+
+}
+
+main
+{   display: flex;
+    flex-direction: column;
+
+}
+
+.heading
+{   width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+h1
+{   
+    width: 100%;
+    padding: 0;
+    font-size: 2.5em;
+
+}
+
+p
+{   width: 100%;
+    margin: 12px 0;
+
+}
+
+.review
+{   position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 330px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.r1 
+{   position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    margin-top: 10px;
+    padding: 25px 0 10px 75px;
+    width: 75%;
+    background-position: 90px top, 120px top, 150px top,180px top, 210px top;
+}
+
+.r2
+{   position: absolute;
+    top: 80px;
+    left: 0px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 25px 0 10px 75px;
+    width: 75%;
+    background-position: 90px top, 120px top, 150px top,180px top, 210px top;
+
+}
+
+.r3
+{   position: absolute;
+    top: 160px;
+    left: 0px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 25px 0 10px 75px;
+    width: 75%;
+    background-position: 90px top, 120px top, 150px top,180px top, 210px top;
+}
+
+.comments
+{   
+    display: flex; 
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+
+.c1 
+{   position: absolute;
+    top: -100px;
+    left: 0;
+    margin: 0px;
+    padding: 12px;
+
+}
+
+.c2
+{   position: absolute;
+    top: 80px;
+    left: 0;
+    margin: 0px;
+    padding: 12px;
+    width: 94%;
+
+}
+
+.c3
+{   position: absolute;
+    top: 260px;
+    left: 0;
+    margin: 0px;
+    padding: 12px;
+    width: 94%;
+}
+
+.attribution
+{  position: absolute;
+    top: 1100px;
+    left: 41px;
+    font-size: 15px;
+
+}
+/*
+main
+{   display: flex;
+    flex-direction: column;
+    
+}
+
+
+.heading
+{  
+    width: 100vw;
+
+}
+
+
+h1
+{ 
+    margin-left: 20%;
+    margin-right: 30%;
+    font-size: 2em;
+
+}
+
+p
+{   width: 100vw;
+
+}
+
+
+
+
+
+
+*/
+}
